@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="592.0" prefWidth="444.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/9.0.1" fx:controller="outdoorparadise.FXMLOrderDetailsController">
+   <children>
+      <TableView fx:id="tabelOrderDetails" layoutX="-1.0" layoutY="62.0" prefHeight="428.0" prefWidth="446.0">
+        <columns>
+          <TableColumn fx:id="kolomDetail" prefWidth="98.4000244140625" text="Order Detail ID" />
+          <TableColumn fx:id="kolomHead" prefWidth="104.0" text="Order Header ID" />
+            <TableColumn fx:id="kolomQuan" prefWidth="73.5999755859375" text="Quantity" />
+            <TableColumn fx:id="kolomPrice" prefWidth="168.80002441406248" text="Unit Sale Price" />
+        </columns>
+      </TableView>
+      <Label fx:id="label" layoutX="151.0" layoutY="24.0" text="ORDER DETAILS">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnLoad" layoutX="175.0" layoutY="517.0" mnemonicParsing="false" onAction="#loadDataFromDatabase" text="LADEN">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

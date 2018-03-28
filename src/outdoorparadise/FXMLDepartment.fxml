@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="349.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/9.0.1" fx:controller="outdoorparadise.FXMLDepartmentController">
+   <children>
+      <TableView fx:id="tabelDepartment" layoutY="44.0" prefHeight="290.0" prefWidth="411.0">
+        <columns>
+          <TableColumn fx:id="kolomDepID" prefWidth="107.20001220703125" text="Department_id" />
+          <TableColumn fx:id="kolomEmp" prefWidth="76.0" text="Employee_id" />
+            <TableColumn fx:id="kolomDepName" prefWidth="226.3999816894531" text="Department Name" />
+        </columns>
+      </TableView>
+      <Label fx:id="label" layoutX="150.0" layoutY="14.0" text="DEPARTMENT">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnLoad" layoutX="172.0" layoutY="350.0" mnemonicParsing="false" onAction="#loadDataFromDatabase" text="LOAD">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

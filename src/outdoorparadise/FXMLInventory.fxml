@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="531.0" prefWidth="292.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/9.0.1" fx:controller="outdoorparadise.FXMLInventoryController">
+   <children>
+      <Label fx:id="label" layoutX="103.0" layoutY="14.0" text="Inventory Levels" />
+      <Button fx:id="btnLoad" layoutX="117.0" layoutY="435.0" mnemonicParsing="false" onAction="#loadDataFromDatabase" text="LADEN" />
+      <TableView fx:id="tabelInventory" layoutX="-7.0" layoutY="47.0" prefHeight="338.0" prefWidth="299.0">
+        <columns>
+          <TableColumn fx:id="kolomYear" prefWidth="75.0" text="Year" />
+          <TableColumn fx:id="kolomCount" prefWidth="75.0" text="Count" />
+            <TableColumn fx:id="kolomMonth" prefWidth="75.0" text="Month" />
+            <TableColumn fx:id="kolomProduct" prefWidth="75.0" text="Product_ID" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

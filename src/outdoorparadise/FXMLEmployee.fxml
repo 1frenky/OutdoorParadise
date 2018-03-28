@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="694.0" prefWidth="1734.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="outdoorparadise.FXMLEmployeeController">
+   <children>
+      <TableView fx:id="tabelEmployee" layoutY="84.0" prefHeight="489.0" prefWidth="1734.0">
+        <columns>
+          <TableColumn fx:id="kolomEmp" prefWidth="74.39999085664749" text="Employee_ID" />
+          <TableColumn fx:id="kolomManager" prefWidth="76.79998779296875" text="Manager_ID" />
+            <TableColumn fx:id="kolomDepartment" prefWidth="75.0" text="Department_ID" />
+            <TableColumn fx:id="kolomBenefit" prefWidth="75.0" text="Benefit_ID" />
+            <TableColumn fx:id="kolomJob" prefWidth="75.0" text="Job_ID" />
+            <TableColumn fx:id="kolomAdress" prefWidth="75.0" text="Adress_ID" />
+            <TableColumn fx:id="kolomFname" prefWidth="125.5999755859375" text="Fname" />
+            <TableColumn fx:id="kolomLname" minWidth="0.0" prefWidth="101.60003662109375" text="Lname" />
+            <TableColumn fx:id="kolomPhone" minWidth="0.0" prefWidth="82.4000244140625" text="Private Phone" />
+            <TableColumn fx:id="kolomStatus" prefWidth="54.39996337890625" text="Status" />
+            <TableColumn fx:id="kolomNumber" prefWidth="191.199951171875" text="SS Number" />
+            <TableColumn fx:id="kolomDate" minWidth="0.0" prefWidth="104.00006103515625" text="Start Date" />
+            <TableColumn fx:id="kolomTerm" prefWidth="124.7999267578125" text="Termination Date" />
+            <TableColumn fx:id="kolomBirth" prefWidth="113.5999755859375" text="Birth Date" />
+            <TableColumn fx:id="kolomSex" prefWidth="72.7998046875" text="Sex" />
+            <TableColumn fx:id="kolomEmail" prefWidth="312.7999267578125" text="Email" />
+        </columns>
+      </TableView>
+      <Label fx:id="labelEmp" layoutX="400.0" layoutY="31.0" prefHeight="18.0" prefWidth="154.0" text="EMPLOYEE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="ladenBtn" layoutX="383.0" layoutY="592.0" mnemonicParsing="false" onAction="#loadDataFromDatabase" text="LADEN">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

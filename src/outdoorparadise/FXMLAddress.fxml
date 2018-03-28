@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="686.0" prefWidth="719.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="outdoorparadise.FXMLAddressController">
+    <children>
+        <Label fx:id="label" layoutX="304.0" layoutY="26.0" minHeight="16" minWidth="69" text="ADDRESS">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <TableView fx:id="tableAddress" layoutY="72.0" prefHeight="511.0" prefWidth="719.0">
+        <columns>
+          <TableColumn fx:id="kolomAdd" prefWidth="69.60000610351562" text="Address_id" />
+          <TableColumn fx:id="kolomStreet" prefWidth="168.00009155273438" text="Street" />
+            <TableColumn fx:id="kolomState" prefWidth="70.39990234375" text="state" />
+            <TableColumn fx:id="kolomZip" prefWidth="73.5999755859375" text="zip" />
+            <TableColumn fx:id="kolomAffix" prefWidth="80.79998779296875" text="affix" />
+            <TableColumn fx:id="kolomCountry_id" prefWidth="116.79998779296875" text="country_id" />
+            <TableColumn fx:id="kolomCity" prefWidth="141.60003662109375" text="city" />
+        </columns>
+      </TableView>
+      <Button fx:id="ladenBtn" layoutX="274.0" layoutY="583.0" mnemonicParsing="false" onAction="#loadDataFromDatabase" prefHeight="82.0" prefWidth="171.0" text="LADEN" />
+    </children>
+</AnchorPane>
